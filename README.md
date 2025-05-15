@@ -37,6 +37,7 @@ The goal of the project was to investigate the electromagnetic behavior of dipol
 │    └── microstrip.m
 │
 ├── Electromagnetic Security Report.pdf
+├── LICENSE
 └── README.md
 ```
 ---
