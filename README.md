@@ -12,31 +12,31 @@ The goal of the project was to investigate the electromagnetic behavior of dipol
 ## 📁 Repository Contents
 ```bash
 
-├── 📁CST_Dipole_Project
+├── 📁CST_Dipole_Project       #CST files
 │ ├──📁 File CST/
-│ │   ├── double_dipole.cst
-│ │   ├── shield_aperture.cst
-│ │   ├── shield_box.cst
-│ │   └── single_dipole.cst
+│ │   ├── double_dipole.cst    #two dipoles model
+│ │   ├── shield_aperture.cst  #two dipoles surrounded by a shield with an aperture
+│ │   ├── shield_box.cst       #two dipoles surrounded by a shield
+│ │   └── single_dipole.cst    #single dipole model
 │ │
-│ └──📁Script Matlab/
-│    ├── emc_box.m
-│    ├── emc_box_with_aperture_only_5GHz.m
-│    ├── emc_box_with_aperture_sweep.m
-│    ├── emc_cm_limit.m
-│    ├── emc_dm_limit.m
-│    ├── length_optimization.m
-│    └── limit.m
+│ └──📁Script Matlab/                           #Matlab scripts for cst result analysis
+│    ├── emc_box.m                              #script for plotting radiated field vs limits with full shield
+│    ├── emc_box_with_aperture_only_5GHz.m      #script for plotting radiated field vs limits with shield with aperture at 5GHz
+│    ├── emc_box_with_aperture_sweep.m          #script for plotting radiated field vs limits with shield with aperture (freq. sweep)
+│    ├── emc_cm_limit.m                         #plot common mode currents limits
+│    ├── emc_dm_limit.m                         #plot differential mode current limits
+│    ├── length_optimization.m                  #dipole length optimization at 5GHz
+│    └── limit.m                                #emission limits 
 │
-├──📁 Matlab_Antenna_Array_Project
-│    ├── array_antennas_N_var_Comparison.m
-│    ├── array_antennas_N_var_Binomial.m
-│    ├── array_antennas_N_var_Chebyshev.m
-│    ├── array_antennas_N_var_ULA.m
-│    ├── array_antennas_Phase_Shift_ULA.m
-│    └── microstrip.m
+├──📁 Matlab_Antenna_Array_Project             #Matlab antenna array simmulations
+│    ├── array_antennas_N_var_Comparison.m     #patch microstrip antenna array comparison
+│    ├── array_antennas_N_var_Binomial.m       #patch microstrip antenna Binomial array with variable number of antennas  
+│    ├── array_antennas_N_var_Chebyshev.m      #patch microstrip antenna Chebyshev array with variable number of antennas
+│    ├── array_antennas_N_var_ULA.m            #patch microstrip antenna ULA array with variable number of antennas
+│    ├── array_antennas_Phase_Shift_ULA.m      #patch microstrip antenna ULA array with variable phase
+│    └── microstrip.m                          #signle patch microstrip design
 │
-├── Electromagnetic Security Report.pdf
+├── Electromagnetic Security Report.pdf        #report
 ├── LICENSE
 └── README.md
 ```
